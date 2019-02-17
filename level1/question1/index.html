@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - MA03 - Question 1</title>
+    <style>
+
+    form { width: 20%; margin: 0 auto; }
+    input, button { width: 100%; box-sizing: border-box; padding: 0.5em; }
+
+    </style>
+<body>
+
+<form novalidate>
+  <fieldset>
+    <legend>Your Name</legend>
+    <p>
+      <label>First Name<br>
+        <input type="text" name="name" pattern="^[a-zA-Z ]+$">
+      </label>
+    </p>
+    <p>
+      <label>Surname<br>
+        <input type="text" name="surname" pattern="^[a-zA-Z ]+$">
+      </label>
+    </p>
+  </fieldset>
+  <fieldset>
+    <legend>Contact Information</legend>
+    <p>
+      <label>Phone<br>
+        <input type="text" name="phone" pattern="\d{9,12}">
+      </label>
+    </p>
+    <p>
+      <label>Email<br>
+        <input type="text" name="email" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$">
+      </label>
+    </p>
+  </fieldset>
+  <button type="button" id="submit">Submit</button>
+</form>
+
+
+<script src="script.js"></script>
+</body>
+</html>
